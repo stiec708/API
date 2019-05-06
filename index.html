@@ -3,28 +3,39 @@
 	<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
     <title>Frizo-meter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     
 </head>
 	<body>
-		<div class="icon">
-			<img src="1.png">
+        <div class="headerH">humidity</div>
+		<div class="hum">
+			<div class="hum__percentage">
+				<h2>
+					<span class="hum__value"></span>
+					<span class="hum__%">%</span>
+				</h2>
+			</div>
 		</div>
-        <div class="header">humidity</div>
+		<div class="headerT">temp</div>
 		<div class="temp">
 			<div class="temp__degrees">
 				<h2>
 					<span class="temp__value"></span>
-					<span class="temp__f">%</span>
+					<span class="temp__f">F</span>
 				</h2>
 			</div>
 		</div>
+		
+		<div class='comment'>
+			<!--your hair will be fine-->
+		maybe use a little hairspray
+		<!--go ham on the hairspray -->
+		<!--give up and wear a hat-->
+		</div>
 
-		<script src="js/skycons.js"></script>
 		<script src="js/app.js"></script>
 	</body>
 </html>

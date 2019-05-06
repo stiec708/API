@@ -4,6 +4,7 @@ window.addEventListener('load', ()=> {
     let lat;
 
     let degrees = document.querySelector('.temp__value');
+    let hum = document.querySelector('.hum__value');
     let body = document.querySelector('body');
 
 if(navigator.geolocation) {
@@ -23,13 +24,11 @@ if(navigator.geolocation) {
             .then(data => {
                 console.log(data);
 
-                const { humidity, icon } = data.currently;
+                const { humidity, temperature } = data.currently;
 
-                degrees.textContent = humidity * 100;
-
-                body.classList.add(icon);
-
-                setIcons(icon, document.querySelector('.icon'));
+                degrees.textContent = temperature;
+                hum.textContent = humidity * 100;
+                
 
 
             });
